@@ -1,5 +1,4 @@
-﻿
-using SAM.Core.Building;
+﻿using SAM.Core.Building;
 
 namespace SAM.Geometry.Building
 {
@@ -56,33 +55,6 @@ namespace SAM.Geometry.Building
             else if (opening is Door && openingType is DoorType)
             {
                 ((Door)opening).Type = (DoorType)openingType;
-            }
-            else
-            {
-                return false;
-            }
-
-            return true;
-        }
-
-        public static bool Type(this MechanicalSystem mechanicalSystem, MechanicalSystemType mechanicalSystemType)
-        {
-            if (mechanicalSystem == null || mechanicalSystemType == null)
-            {
-                return false;
-            }
-
-            if (mechanicalSystem is CoolingSystem && mechanicalSystemType is CoolingSystemType)
-            {
-                ((CoolingSystem)mechanicalSystem).Type = (CoolingSystemType)mechanicalSystemType;
-            }
-            else if (mechanicalSystem is HeatingSystem && mechanicalSystemType is HeatingSystemType)
-            {
-                ((HeatingSystem)mechanicalSystem).Type = (HeatingSystemType)mechanicalSystemType;
-            }
-            else if (mechanicalSystem is VentilationSystem && mechanicalSystemType is VentilationSystemType)
-            {
-                ((VentilationSystem)mechanicalSystem).Type = (VentilationSystemType)mechanicalSystemType;
             }
             else
             {

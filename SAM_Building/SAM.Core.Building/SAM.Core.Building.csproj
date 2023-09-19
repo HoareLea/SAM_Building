@@ -73,6 +73,7 @@
     <Compile Include="Classes\WallType.cs" />
     <Compile Include="Classes\WindowType.cs" />
     <Compile Include="Classes\Zone.cs" />
+    <Compile Include="Enums\BoundaryType.cs" />
     <Compile Include="Enums\HostPartitionCategory.cs" />
     <Compile Include="Enums\OpeningAnalyticalType.cs" />
     <Compile Include="Enums\OpeningPart.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Enums\ZoneType.cs" />
     <Compile Include="Interfaces\IBuildingObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\Adiabatic.cs" />
     <Compile Include="Query\HostPartitionCategory.cs" />
     <Compile Include="Query\InternalConditionParameter.cs" />
     <Compile Include="Query\Material.cs" />
@@ -93,6 +95,7 @@
     <Compile Include="Query\PartitionAnalyticalType.cs" />
     <Compile Include="Query\ProfileGroup.cs" />
     <Compile Include="Query\Transparent.cs" />
+    <Compile Include="Query\Type.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Convert\" />
