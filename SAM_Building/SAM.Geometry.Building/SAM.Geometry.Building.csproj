@@ -96,12 +96,24 @@
     <Compile Include="Query\CoolingDesignTemperature.cs" />
     <Compile Include="Query\Cut.cs" />
     <Compile Include="Query\DefaultHostPartitionType.cs" />
+    <Compile Include="Query\DesignHeatingLoad.cs" />
+    <Compile Include="Query\DuplicatedSpacesDictionary.cs" />
+    <Compile Include="Query\Extend.cs" />
+    <Compile Include="Query\ExternalMaterial.cs" />
+    <Compile Include="Query\ExternalMaterialLayer.cs" />
+    <Compile Include="Query\ExternalPartitions.cs" />
+    <Compile Include="Query\ExternalPartitionsArea.cs" />
+    <Compile Include="Query\ExternalVector3D.cs" />
+    <Compile Include="Query\Extrusion.cs" />
+    <Compile Include="Query\Face3D.cs" />
+    <Compile Include="Query\Fill.cs" />
     <Compile Include="Query\HasMaterial.cs" />
     <Compile Include="Query\HostPartitionCategory.cs" />
     <Compile Include="Query\IsValid.cs" />
     <Compile Include="Query\Materials.cs" />
     <Compile Include="Query\OpeningAnalyticalType.cs" />
     <Compile Include="Query\PartitionAnalyticalType.cs" />
+    <Compile Include="Query\SpaceShells.cs" />
     <Compile Include="Query\Sum.cs" />
     <Compile Include="Query\Type.cs" />
   </ItemGroup>
@@ -110,6 +122,9 @@
     <Folder Include="Modify\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="NetTopologySuite">
+      <Version>2.5.0</Version>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.2</Version>
     </PackageReference>

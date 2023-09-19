@@ -1,5 +1,4 @@
-﻿
-namespace SAM.Core.Building
+﻿namespace SAM.Core.Building
 {
     public static partial class Query
     {

@@ -95,7 +95,14 @@
     <Compile Include="Query\Adiabatic.cs" />
     <Compile Include="Query\Color.cs" />
     <Compile Include="Query\DefaultHostPartitionTypeLibrary.cs" />
+    <Compile Include="Query\DefaultMaterialLibrary.cs" />
+    <Compile Include="Query\DefaultOpeningType.cs" />
+    <Compile Include="Query\DefaultOpeningTypeLibrary.cs" />
     <Compile Include="Query\DefaultPath.cs" />
+    <Compile Include="Query\DefaultProfileLibrary.cs" />
+    <Compile Include="Query\External.cs" />
+    <Compile Include="Query\ExternalMaterial.cs" />
+    <Compile Include="Query\ExternalMaterialLayer.cs" />
     <Compile Include="Query\HostPartitionCategory.cs" />
     <Compile Include="Query\InternalConditionParameter.cs" />
     <Compile Include="Query\Material.cs" />
