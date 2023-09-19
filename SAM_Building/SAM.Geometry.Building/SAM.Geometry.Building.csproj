@@ -73,7 +73,9 @@
     <Compile Include="Classes\Space.cs" />
     <Compile Include="Classes\Wall.cs" />
     <Compile Include="Classes\Window.cs" />
+    <Compile Include="Create\HostPartition.cs" />
     <Compile Include="Create\Opening.cs" />
+    <Compile Include="Create\Partition.cs" />
     <Compile Include="Enums\Parameter\SpaceParameter.cs" />
     <Compile Include="Enums\Parameter\HostPartitionParameter.cs" />
     <Compile Include="Enums\Parameter\PartitionSimulationResultParameter.cs" />
@@ -86,12 +88,21 @@
     <Compile Include="Query\Azimuth.cs" />
     <Compile Include="Query\BoundaryType.cs" />
     <Compile Include="Query\CalculatedArea.cs" />
+    <Compile Include="Query\CalculatedExhaustAirflow.cs" />
+    <Compile Include="Query\CalculatedOutsideSupplyAirflow.cs" />
+    <Compile Include="Query\CalculatedSupplyAirflow.cs" />
+    <Compile Include="Query\CalculatedVolume.cs" />
+    <Compile Include="Query\Color.cs" />
+    <Compile Include="Query\CoolingDesignTemperature.cs" />
+    <Compile Include="Query\Cut.cs" />
+    <Compile Include="Query\DefaultHostPartitionType.cs" />
     <Compile Include="Query\HasMaterial.cs" />
     <Compile Include="Query\HostPartitionCategory.cs" />
     <Compile Include="Query\IsValid.cs" />
     <Compile Include="Query\Materials.cs" />
     <Compile Include="Query\OpeningAnalyticalType.cs" />
     <Compile Include="Query\PartitionAnalyticalType.cs" />
+    <Compile Include="Query\Sum.cs" />
     <Compile Include="Query\Type.cs" />
   </ItemGroup>
   <ItemGroup>

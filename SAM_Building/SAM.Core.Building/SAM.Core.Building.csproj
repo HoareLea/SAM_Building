@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,7 +57,9 @@
     <Compile Include="Classes\DoorType.cs" />
     <Compile Include="Classes\FloorType.cs" />
     <Compile Include="Classes\HostPartitionType.cs" />
+    <Compile Include="Classes\HostPartitionTypeLibrary.cs" />
     <Compile Include="Classes\InternalCondition.cs" />
+    <Compile Include="Classes\InternalConditionLibrary.cs" />
     <Compile Include="Classes\OpeningType.cs" />
     <Compile Include="Classes\OpeningTypeLibrary.cs" />
     <Compile Include="Classes\Profile.cs" />
@@ -77,6 +80,7 @@
     <Compile Include="Enums\HostPartitionCategory.cs" />
     <Compile Include="Enums\OpeningAnalyticalType.cs" />
     <Compile Include="Enums\OpeningPart.cs" />
+    <Compile Include="Enums\Parameter\AnalyticalSettingParameter.cs" />
     <Compile Include="Enums\Parameter\HostPartitionTypeParameter.cs" />
     <Compile Include="Enums\Parameter\InternalConditionParameter.cs" />
     <Compile Include="Enums\Parameter\OpeningTypeParameter.cs" />
@@ -86,8 +90,12 @@
     <Compile Include="Enums\ProfileType.cs" />
     <Compile Include="Enums\ZoneType.cs" />
     <Compile Include="Interfaces\IBuildingObject.cs" />
+    <Compile Include="Manager\ActiveSetting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query\Adiabatic.cs" />
+    <Compile Include="Query\Color.cs" />
+    <Compile Include="Query\DefaultHostPartitionTypeLibrary.cs" />
+    <Compile Include="Query\DefaultPath.cs" />
     <Compile Include="Query\HostPartitionCategory.cs" />
     <Compile Include="Query\InternalConditionParameter.cs" />
     <Compile Include="Query\Material.cs" />
