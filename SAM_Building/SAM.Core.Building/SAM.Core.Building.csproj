@@ -105,6 +105,7 @@
     <Compile Include="Query\ExternalMaterialLayer.cs" />
     <Compile Include="Query\HostPartitionCategory.cs" />
     <Compile Include="Query\InternalConditionParameter.cs" />
+    <Compile Include="Query\InternalMaterialLayer.cs" />
     <Compile Include="Query\Material.cs" />
     <Compile Include="Query\OpeningAnalyticalType.cs" />
     <Compile Include="Query\PartitionAnalyticalType.cs" />

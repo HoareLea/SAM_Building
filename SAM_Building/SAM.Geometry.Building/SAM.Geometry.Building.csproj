@@ -76,6 +76,8 @@
     <Compile Include="Create\HostPartition.cs" />
     <Compile Include="Create\Opening.cs" />
     <Compile Include="Create\Partition.cs" />
+    <Compile Include="Create\Partitions.cs" />
+    <Compile Include="Create\Rectangle2D.cs" />
     <Compile Include="Enums\Parameter\SpaceParameter.cs" />
     <Compile Include="Enums\Parameter\HostPartitionParameter.cs" />
     <Compile Include="Enums\Parameter\PartitionSimulationResultParameter.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Interfaces\IHostPartition.cs" />
     <Compile Include="Interfaces\IOpening.cs" />
     <Compile Include="Interfaces\IPartition.cs" />
+    <Compile Include="Modify\AddAirPartitions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query\Adiabatic.cs" />
     <Compile Include="Query\Azimuth.cs" />
@@ -107,19 +110,33 @@
     <Compile Include="Query\Extrusion.cs" />
     <Compile Include="Query\Face3D.cs" />
     <Compile Include="Query\Fill.cs" />
+    <Compile Include="Query\FirstMaterial.cs" />
+    <Compile Include="Query\FirstMaterialLayer.cs" />
     <Compile Include="Query\HasMaterial.cs" />
     <Compile Include="Query\HostPartitionCategory.cs" />
+    <Compile Include="Query\InternalMaterialLayer.cs" />
+    <Compile Include="Query\InternalMaterialLayerDictionary.cs" />
     <Compile Include="Query\IsValid.cs" />
     <Compile Include="Query\Materials.cs" />
+    <Compile Include="Query\MergeCoplanar.cs" />
+    <Compile Include="Query\MinElevation.cs" />
+    <Compile Include="Query\NormalDictionary.cs" />
     <Compile Include="Query\OpeningAnalyticalType.cs" />
     <Compile Include="Query\PartitionAnalyticalType.cs" />
+    <Compile Include="Query\Profiles.cs" />
+    <Compile Include="Query\Project.cs" />
+    <Compile Include="Query\SpaceDictionary.cs" />
     <Compile Include="Query\SpaceShells.cs" />
+    <Compile Include="Query\Split.cs" />
+    <Compile Include="Query\SplitByInternalEdges.cs" />
     <Compile Include="Query\Sum.cs" />
+    <Compile Include="Query\Triangulate.cs" />
     <Compile Include="Query\Type.cs" />
+    <Compile Include="Query\UniqueIndex.cs" />
+    <Compile Include="Query\Width.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Convert\" />
-    <Folder Include="Modify\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NetTopologySuite">
