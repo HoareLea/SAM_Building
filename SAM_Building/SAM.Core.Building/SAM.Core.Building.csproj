@@ -76,6 +76,7 @@
     <Compile Include="Classes\WallType.cs" />
     <Compile Include="Classes\WindowType.cs" />
     <Compile Include="Classes\Zone.cs" />
+    <Compile Include="Create\MechanicalSystem.cs" />
     <Compile Include="Enums\BoundaryType.cs" />
     <Compile Include="Enums\HostPartitionCategory.cs" />
     <Compile Include="Enums\OpeningAnalyticalType.cs" />
@@ -115,7 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Convert\" />
-    <Folder Include="Create\" />
     <Folder Include="Modify\" />
   </ItemGroup>
   <ItemGroup>

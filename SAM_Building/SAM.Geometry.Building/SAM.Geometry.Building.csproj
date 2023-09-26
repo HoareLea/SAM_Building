@@ -85,7 +85,15 @@
     <Compile Include="Interfaces\IHostPartition.cs" />
     <Compile Include="Interfaces\IOpening.cs" />
     <Compile Include="Interfaces\IPartition.cs" />
+    <Compile Include="Modify\AddMechanicalSystem.cs" />
     <Compile Include="Modify\AddAirPartitions.cs" />
+    <Compile Include="Modify\AddMissingMaterials.cs" />
+    <Compile Include="Modify\AddMissingProfiles.cs" />
+    <Compile Include="Modify\AddOpening.cs" />
+    <Compile Include="Modify\AddOpenings.cs" />
+    <Compile Include="Modify\FixEdges.cs" />
+    <Compile Include="Modify\MapInternalConditions.cs" />
+    <Compile Include="Modify\TryAddOpening.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query\Adiabatic.cs" />
     <Compile Include="Query\Azimuth.cs" />
@@ -112,6 +120,7 @@
     <Compile Include="Query\Fill.cs" />
     <Compile Include="Query\FirstMaterial.cs" />
     <Compile Include="Query\FirstMaterialLayer.cs" />
+    <Compile Include="Query\FixEdges.cs" />
     <Compile Include="Query\HasMaterial.cs" />
     <Compile Include="Query\HostPartitionCategory.cs" />
     <Compile Include="Query\InternalMaterialLayer.cs" />
@@ -122,6 +131,7 @@
     <Compile Include="Query\MinElevation.cs" />
     <Compile Include="Query\NormalDictionary.cs" />
     <Compile Include="Query\OpeningAnalyticalType.cs" />
+    <Compile Include="Query\OpeningLocation.cs" />
     <Compile Include="Query\PartitionAnalyticalType.cs" />
     <Compile Include="Query\Profiles.cs" />
     <Compile Include="Query\Project.cs" />
@@ -131,6 +141,8 @@
     <Compile Include="Query\SplitByInternalEdges.cs" />
     <Compile Include="Query\Sum.cs" />
     <Compile Include="Query\Triangulate.cs" />
+    <Compile Include="Query\TryGetInternalCondition.cs" />
+    <Compile Include="Query\TryGetInternalConditions.cs" />
     <Compile Include="Query\Type.cs" />
     <Compile Include="Query\UniqueIndex.cs" />
     <Compile Include="Query\Width.cs" />
