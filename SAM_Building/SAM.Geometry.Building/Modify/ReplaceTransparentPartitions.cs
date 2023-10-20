@@ -1,6 +1,5 @@
 ﻿using SAM.Core;
 using SAM.Core.Building;
-using SAM.Geometry.Building;
 using System.Collections.Generic;
 
 namespace SAM.Geometry.Building

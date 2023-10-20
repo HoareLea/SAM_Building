@@ -1,7 +1,4 @@
-﻿using SAM.Core.Building;
-using System.Collections.Generic;
-
-namespace SAM.Core.Building
+﻿namespace SAM.Core.Building
 {
     public static partial class Query
     {

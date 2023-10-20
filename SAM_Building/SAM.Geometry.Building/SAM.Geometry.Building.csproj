@@ -103,6 +103,8 @@
     <Compile Include="Modify\UpdateHostPartitionType.cs" />
     <Compile Include="Modify\UpdateMaterials.cs" />
     <Compile Include="Modify\UpdateMaterialsByHeatTransferCoefficients.cs" />
+    <Compile Include="Modify\UpdateMaterialsByMaterialLayerThickness.cs" />
+    <Compile Include="Modify\UpdateSpace.cs" />
     <Compile Include="Modify\UpdateZone.cs" />
     <Compile Include="Modify\MapZones.cs" />
     <Compile Include="Modify\TryAddOpening.cs" />

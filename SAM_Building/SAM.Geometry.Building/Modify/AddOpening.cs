@@ -1,5 +1,4 @@
 ﻿using SAM.Core.Building;
-using SAM.Geometry.Building;
 using SAM.Geometry.Planar;
 using SAM.Geometry.Spatial;
 using System.Collections.Generic;

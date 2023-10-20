@@ -1,6 +1,4 @@
-﻿using SAM.Core;
-using SAM.Core.Building;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace SAM.Core.Building
 {

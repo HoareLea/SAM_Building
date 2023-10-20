@@ -79,9 +79,10 @@
     <Compile Include="Create\GasMaterial.cs" />
     <Compile Include="Create\HostPartitionType.cs" />
     <Compile Include="Create\MechanicalSystem.cs" />
+    <Compile Include="Create\OpeningType.cs" />
     <Compile Include="Enums\BoundaryType.cs" />
     <Compile Include="Enums\DefaultGasType.cs" />
-    <Compile Include="Enums\GasMaterialParameter.cs" />
+    <Compile Include="Enums\HostPartitionCategory.cs" />
     <Compile Include="Enums\OpeningAnalyticalType.cs" />
     <Compile Include="Enums\OpeningPart.cs" />
     <Compile Include="Enums\Parameter\AnalyticalSettingParameter.cs" />

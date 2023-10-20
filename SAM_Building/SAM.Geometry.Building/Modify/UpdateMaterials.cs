@@ -4,7 +4,6 @@ using System.Linq;
 
 using SAM.Architectural;
 using SAM.Core.Building;
-using SAM.Geometry.Building;
 
 namespace SAM.Geometry.Building
 {
