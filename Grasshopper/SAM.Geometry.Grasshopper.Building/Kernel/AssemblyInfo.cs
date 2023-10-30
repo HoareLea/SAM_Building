@@ -2,7 +2,7 @@
 using System;
 using System.Drawing;
 
-namespace SAM.Analytical.Grasshopper.TMP
+namespace SAM.Geometry.Grasshopper.Building
 {
     public class AssemblyInfo : GH_AssemblyInfo
     {
@@ -19,7 +19,7 @@ namespace SAM.Analytical.Grasshopper.TMP
             get
             {
                 //Return a 24x24 pixel bitmap to represent this GHA library.
-                return Properties.Resources.SAM_Small; ;
+                return Properties.Resources.SAM_Small;
             }
         }
 
@@ -28,7 +28,7 @@ namespace SAM.Analytical.Grasshopper.TMP
             get
             {
                 //Return a 24x24 pixel bitmap to represent this GHA library.
-                return Properties.Resources.SAM_Small; ;
+                return Properties.Resources.SAM_Small;
             }
         }
 

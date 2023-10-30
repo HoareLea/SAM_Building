@@ -18,8 +18,8 @@
     <ProjectGuid>{A1DB5A5E-8118-4B86-8E0D-80FF61D80FEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SAM.Analytical.Grasshopper.TMP</RootNamespace>
-    <AssemblyName>SAM.Analytical.Grasshopper.TMP</AssemblyName>
+    <RootNamespace>SAM.Geometry.Grasshopper.Building</RootNamespace>
+    <AssemblyName>SAM.Geometry.Grasshopper.Building</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -44,6 +44,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SAM.Core, Version=1.0.8693.24616, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SAM\build\SAM.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM.Core.Grasshopper">
+      <HintPath>..\..\..\SAM\build\SAM.Core.Grasshopper.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM.Geometry, Version=1.0.8693.24617, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SAM\build\SAM.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM.Geometry.Grasshopper">
+      <HintPath>..\..\..\SAM\build\SAM.Geometry.Grasshopper.dll</HintPath>
+    </Reference>
+    <Reference Include="SAM.Geometry.Rhino">
+      <HintPath>..\..\..\SAM\build\SAM.Geometry.Rhino.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -54,7 +71,16 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\GooBuildingModel.cs" />
+    <Compile Include="Classes\GooPartition.cs" />
+    <Compile Include="Convert\ToGrasshopper\GH_Mesh.cs" />
     <Compile Include="Kernel\AssemblyInfo.cs" />
+    <Compile Include="Modify\BakeGeometry_ByAnalyticalType.cs" />
+    <Compile Include="Modify\BakeGeometry_Category.cs" />
+    <Compile Include="Modify\BakeGeometry_ByType.cs" />
+    <Compile Include="Modify\BakeGeometry.cs" />
+    <Compile Include="Modify\DrawViewportWires.cs" />
+    <Compile Include="Modify\DrawViewportMeshes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -76,11 +102,8 @@
     <None Include="Resources\HL_Logo24.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
     <Folder Include="Component\" />
-    <Folder Include="Convert\ToGrasshopper\" />
     <Folder Include="Convert\ToRhino\" />
-    <Folder Include="Modify\" />
     <Folder Include="Query\" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +120,28 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.2</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Rhino\SAM.Core.Building.Rhino\SAM.Core.Building.Rhino.csproj">
+      <Project>{be4812dc-5049-4e02-98d7-981ea89c61a8}</Project>
+      <Name>SAM.Core.Building.Rhino</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Rhino\SAM.Geometry.Building.Rhino\SAM.Geometry.Building.Rhino.csproj">
+      <Project>{004a6d97-2342-4eb3-a874-ac52e81812db}</Project>
+      <Name>SAM.Geometry.Building.Rhino</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SAM_Building\SAM.Core.Building\SAM.Core.Building.csproj">
+      <Project>{1c86b9ac-81b3-41d8-ba48-321f28ab94f4}</Project>
+      <Name>SAM.Core.Building</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SAM_Building\SAM.Geometry.Building\SAM.Geometry.Building.csproj">
+      <Project>{e5550801-4863-4036-904d-7563c9722760}</Project>
+      <Name>SAM.Geometry.Building</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAM.Core.Grasshopper.Building\SAM.Core.Grasshopper.Building.csproj">
+      <Project>{ea20d57f-bb3e-447a-80a2-14c04baa665f}</Project>
+      <Name>SAM.Core.Grasshopper.Building</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -126,6 +171,6 @@ copy "%25SAM_DIR%25\$(ProjectName).dll" "%25SAM_DIR%25\$(ProjectName).gha"
     <StartArguments>
     </StartArguments>
     <StartAction>Program</StartAction>
-    <DocumentationFile>..\..\build\SAM.Analytical.Grasshopper.TMP.xml</DocumentationFile>
+    <DocumentationFile>..\..\build\SAM.Geometry.Grasshopper.Building.xml</DocumentationFile>
   </PropertyGroup>
 </Project>

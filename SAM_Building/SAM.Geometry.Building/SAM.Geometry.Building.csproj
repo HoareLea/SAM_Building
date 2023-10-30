@@ -73,6 +73,7 @@
     <Compile Include="Classes\Space.cs" />
     <Compile Include="Classes\Wall.cs" />
     <Compile Include="Classes\Window.cs" />
+    <Compile Include="Create\HostPartitions.cs" />
     <Compile Include="Create\HostPartition.cs" />
     <Compile Include="Create\Opening.cs" />
     <Compile Include="Create\Partition.cs" />

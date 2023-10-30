@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29519.87
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SAM_Building", "SAM_Building", "{4FDEDAD6-FCEC-4426-9A3B-086BF3C99CC0}"
 EndProject
@@ -14,6 +14,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAM.Core.Building", "SAM_Building\SAM.Core.Building\SAM.Core.Building.csproj", "{1C86B9AC-81B3-41D8-BA48-321F28AB94F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAM.Geometry.Building", "SAM_Building\SAM.Geometry.Building\SAM.Geometry.Building.csproj", "{E5550801-4863-4036-904D-7563C9722760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAM.Geometry.Grasshopper.Building", "Grasshopper\SAM.Geometry.Grasshopper.Building\SAM.Geometry.Grasshopper.Building.csproj", "{A1DB5A5E-8118-4B86-8E0D-80FF61D80FEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rhino", "Rhino", "{E269DDFF-203C-4938-B8F0-E01B1544694C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAM.Core.Building.Rhino", "Rhino\SAM.Core.Building.Rhino\SAM.Core.Building.Rhino.csproj", "{BE4812DC-5049-4E02-98D7-981EA89C61A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAM.Geometry.Building.Rhino", "Rhino\SAM.Geometry.Building.Rhino\SAM.Geometry.Building.Rhino.csproj", "{004A6D97-2342-4EB3-A874-AC52E81812DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,18 @@ Global
 		{E5550801-4863-4036-904D-7563C9722760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5550801-4863-4036-904D-7563C9722760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5550801-4863-4036-904D-7563C9722760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1DB5A5E-8118-4B86-8E0D-80FF61D80FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DB5A5E-8118-4B86-8E0D-80FF61D80FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1DB5A5E-8118-4B86-8E0D-80FF61D80FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1DB5A5E-8118-4B86-8E0D-80FF61D80FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE4812DC-5049-4E02-98D7-981EA89C61A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4812DC-5049-4E02-98D7-981EA89C61A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4812DC-5049-4E02-98D7-981EA89C61A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4812DC-5049-4E02-98D7-981EA89C61A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004A6D97-2342-4EB3-A874-AC52E81812DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004A6D97-2342-4EB3-A874-AC52E81812DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004A6D97-2342-4EB3-A874-AC52E81812DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004A6D97-2342-4EB3-A874-AC52E81812DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +61,9 @@ Global
 		{EA20D57F-BB3E-447A-80A2-14C04BAA665F} = {B365D5A7-F4F1-4C45-9565-5F6CFC1134A4}
 		{1C86B9AC-81B3-41D8-BA48-321F28AB94F4} = {4FDEDAD6-FCEC-4426-9A3B-086BF3C99CC0}
 		{E5550801-4863-4036-904D-7563C9722760} = {4FDEDAD6-FCEC-4426-9A3B-086BF3C99CC0}
+		{A1DB5A5E-8118-4B86-8E0D-80FF61D80FEB} = {B365D5A7-F4F1-4C45-9565-5F6CFC1134A4}
+		{BE4812DC-5049-4E02-98D7-981EA89C61A8} = {E269DDFF-203C-4938-B8F0-E01B1544694C}
+		{004A6D97-2342-4EB3-A874-AC52E81812DB} = {E269DDFF-203C-4938-B8F0-E01B1544694C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E0308FF-C8D5-4700-951A-859CB9D4FD09}
