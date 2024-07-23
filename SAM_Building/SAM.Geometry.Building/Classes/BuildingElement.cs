@@ -2,6 +2,7 @@
 
 using SAM.Core;
 using SAM.Core.Building;
+using SAM.Geometry.Object.Spatial;
 using SAM.Geometry.Spatial;
 
 namespace SAM.Geometry.Building

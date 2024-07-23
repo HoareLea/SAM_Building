@@ -1,6 +1,6 @@
 ﻿using SAM.Core;
 using SAM.Core.Building;
-using SAM.Geometry.Spatial;
+using SAM.Geometry.Object.Spatial;
 
 namespace SAM.Geometry.Building
 {

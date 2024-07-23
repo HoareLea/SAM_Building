@@ -8,6 +8,7 @@ using Rhino.Geometry;
 using SAM.Core.Grasshopper;
 using SAM.Geometry.Building;
 using SAM.Geometry.Grasshopper.Building.Properties;
+using SAM.Geometry.Object.Spatial;
 using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
@@ -305,7 +306,7 @@ namespace SAM.Geometry.Grasshopper.Building
                         {
                             for (int j = 0; j < face3Ds.Count; j++)
                             {
-                                IPartition partition_Old = partitions.Closest(face3Ds[j].GetInternalPoint3D());
+                                IPartition partition_Old = Object.Spatial.Query.Closest(partitions, face3Ds[j].GetInternalPoint3D());
                                 if (partition_Old != null)
                                 {
                                     partitions[j] = Geometry.Building.Create.Partition(partition_Old, partition_Old.Guid, face3Ds[j]);
@@ -385,7 +386,7 @@ namespace SAM.Geometry.Grasshopper.Building
                         {
                             for (int j = 0; j < face3Ds.Count; j++)
                             {
-                                IPartition partition_Old = partitions.Closest(face3Ds[j].GetInternalPoint3D());
+                                IPartition partition_Old = Object.Spatial.Query.Closest(partitions, face3Ds[j].GetInternalPoint3D());
                                 if (partition_Old != null)
                                 {
                                     partitions[j] = Geometry.Building.Create.Partition(partition_Old, partition_Old.Guid, face3Ds[j]);
