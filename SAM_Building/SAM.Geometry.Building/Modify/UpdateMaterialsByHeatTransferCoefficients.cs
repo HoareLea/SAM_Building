@@ -1,5 +1,6 @@
 ﻿using SAM.Core;
 using SAM.Core.Building;
+using SAM.Geometry.Object.Spatial;
 using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,7 +55,7 @@ namespace SAM.Geometry.Building
                         if (hostPartition == null)
                             continue;
 
-                        double tilt = System.Math.Round(Geometry.Spatial.Query.Tilt(hostPartition), 0) * System.Math.PI / 180;
+                        double tilt = System.Math.Round(Object.Spatial.Query.Tilt(hostPartition), 0) * System.Math.PI / 180;
 
                         List<IHostPartition> hostPartitions_Tilt = null;
                         if (!dictionary.TryGetValue(tilt, out hostPartitions_Tilt))
@@ -126,7 +127,7 @@ namespace SAM.Geometry.Building
                     {
                         double area_Panel = hostPartition.Face3D.GetArea();
 
-                        tilt += Geometry.Spatial.Query.Tilt(hostPartition) * System.Math.PI / 180 * area_Panel;
+                        tilt += Object.Spatial.Query.Tilt(hostPartition) * System.Math.PI / 180 * area_Panel;
                         area += area_Panel;
                     }
 
@@ -190,7 +191,7 @@ namespace SAM.Geometry.Building
                         if (opening == null)
                             continue;
 
-                        double tilt = System.Math.Round(Geometry.Spatial.Query.Tilt(opening), 0) * System.Math.PI / 180;
+                        double tilt = System.Math.Round(Object.Spatial.Query.Tilt(opening), 0) * System.Math.PI / 180;
 
                         List<IOpening> opening_Tilt = null;
                         if (!dictionary.TryGetValue(tilt, out opening_Tilt))

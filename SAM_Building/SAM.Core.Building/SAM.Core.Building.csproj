@@ -1,37 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1C86B9AC-81B3-41D8-BA48-321F28AB94F4}</ProjectGuid>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SAM.Core.Building</RootNamespace>
-    <AssemblyName>SAM.Core.Building</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
     <Deterministic>false</Deterministic>
-    <TargetFrameworkProfile />
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>SAM</AssemblyTitle>
+    <Product>SAM</Product>
+    <Copyright>Copyright ©  2020</Copyright>
+    <AssemblyVersion>1.0.%2a</AssemblyVersion>
+    <FileVersion>1.0.%2a</FileVersion>
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
     <OutputPath>..\..\build\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
     <DocumentationFile>..\..\build\SAM.Core.Building.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
     <OutputPath>..\build\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Convert\**" />
+    <Compile Remove="Modify\**" />
+    <EmbeddedResource Remove="Convert\**" />
+    <EmbeddedResource Remove="Modify\**" />
+    <None Remove="Convert\**" />
+    <None Remove="Modify\**" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="SAM.Architectural, Version=1.0.8658.28412, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -40,102 +35,11 @@
     <Reference Include="SAM.Core">
       <HintPath>..\..\..\SAM\build\SAM.Core.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.IO.Compression" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\BuildingElementType.cs" />
-    <Compile Include="Classes\ConstructionLayer.cs" />
-    <Compile Include="Classes\DoorType.cs" />
-    <Compile Include="Classes\FloorType.cs" />
-    <Compile Include="Classes\HostPartitionType.cs" />
-    <Compile Include="Classes\HostPartitionTypeLibrary.cs" />
-    <Compile Include="Classes\InternalCondition.cs" />
-    <Compile Include="Classes\InternalConditionLibrary.cs" />
-    <Compile Include="Classes\OpeningType.cs" />
-    <Compile Include="Classes\OpeningTypeLibrary.cs" />
-    <Compile Include="Classes\Profile.cs" />
-    <Compile Include="Classes\ProfileLibrary.cs" />
-    <Compile Include="Classes\RoofType.cs" />
-    <Compile Include="Classes\System\CoolingSystem.cs" />
-    <Compile Include="Classes\System\CoolingSystemType.cs" />
-    <Compile Include="Classes\System\HeatingSystem.cs" />
-    <Compile Include="Classes\System\HeatingSystemType.cs" />
-    <Compile Include="Classes\System\MechanicalSystem.cs" />
-    <Compile Include="Classes\System\MechanicalSystemType.cs" />
-    <Compile Include="Classes\System\VentilationSystem.cs" />
-    <Compile Include="Classes\System\VentilationSystemType.cs" />
-    <Compile Include="Classes\WallType.cs" />
-    <Compile Include="Classes\WindowType.cs" />
-    <Compile Include="Classes\Zone.cs" />
-    <Compile Include="Create\GasMaterial.cs" />
-    <Compile Include="Create\HostPartitionType.cs" />
-    <Compile Include="Create\MechanicalSystem.cs" />
-    <Compile Include="Create\OpeningType.cs" />
-    <Compile Include="Enums\BoundaryType.cs" />
-    <Compile Include="Enums\DefaultGasType.cs" />
-    <Compile Include="Enums\HostPartitionCategory.cs" />
-    <Compile Include="Enums\OpeningAnalyticalType.cs" />
-    <Compile Include="Enums\OpeningPart.cs" />
-    <Compile Include="Enums\Parameter\AnalyticalSettingParameter.cs" />
-    <Compile Include="Enums\Parameter\HostPartitionTypeParameter.cs" />
-    <Compile Include="Enums\Parameter\InternalConditionParameter.cs" />
-    <Compile Include="Enums\Parameter\OpeningTypeParameter.cs" />
-    <Compile Include="Enums\Parameter\GasMaterialParameter.cs" />
-    <Compile Include="Enums\Parameter\MaterialParameter.cs" />
-    <Compile Include="Enums\Parameter\ZoneParameter.cs" />
-    <Compile Include="Enums\PartitionAnalyticalType.cs" />
-    <Compile Include="Enums\ProfileGroup.cs" />
-    <Compile Include="Enums\ProfileType.cs" />
-    <Compile Include="Enums\ZoneType.cs" />
-    <Compile Include="Interfaces\IBuildingObject.cs" />
-    <Compile Include="Manager\ActiveSetting.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Query\Adiabatic.cs" />
-    <Compile Include="Query\AirspaceConvectiveHeatTransferCoefficient.cs" />
-    <Compile Include="Query\Color.cs" />
-    <Compile Include="Query\DefaultGasMaterial.cs" />
-    <Compile Include="Query\DefaultGasType.cs" />
-    <Compile Include="Query\DefaultHostPartitionTypeLibrary.cs" />
-    <Compile Include="Query\DefaultMaterialLibrary.cs" />
-    <Compile Include="Query\DefaultOpeningType.cs" />
-    <Compile Include="Query\DefaultOpeningTypeLibrary.cs" />
-    <Compile Include="Query\DefaultPath.cs" />
-    <Compile Include="Query\DefaultProfileLibrary.cs" />
-    <Compile Include="Query\External.cs" />
-    <Compile Include="Query\ExternalMaterial.cs" />
-    <Compile Include="Query\ExternalMaterialLayer.cs" />
-    <Compile Include="Query\GrashofNumber.cs" />
-    <Compile Include="Query\HeatTransferCoefficient.cs" />
-    <Compile Include="Query\HostPartitionCategory.cs" />
-    <Compile Include="Query\InternalConditionParameter.cs" />
-    <Compile Include="Query\InternalMaterialLayer.cs" />
-    <Compile Include="Query\Material.cs" />
-    <Compile Include="Query\NusseltNumber.cs" />
-    <Compile Include="Query\OpeningAnalyticalType.cs" />
-    <Compile Include="Query\PartitionAnalyticalType.cs" />
-    <Compile Include="Query\PrandtlNumber.cs" />
-    <Compile Include="Query\ProfileGroup.cs" />
-    <Compile Include="Query\Transparent.cs" />
-    <Compile Include="Query\Zone.cs" />
-    <Compile Include="Query\Type.cs" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.7" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Convert\" />
-    <Folder Include="Modify\" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>13.0.2</Version>
-    </PackageReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

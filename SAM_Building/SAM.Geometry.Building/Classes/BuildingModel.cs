@@ -8,6 +8,7 @@ using System.Linq;
 using SAM.Architectural;
 using System.Threading.Tasks;
 using SAM.Core.Building;
+using SAM.Geometry.Object.Spatial;
 
 namespace SAM.Geometry.Building
 {
